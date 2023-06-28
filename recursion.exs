@@ -53,16 +53,16 @@ defmodule Recursion do
      # append to 'res' with ++
   def square([head | tail], result), do: square(tail, result ++ [head * head])
   # Map: The result is always a list of the same size as the original enumerable.
-  # f: A -> A ==> Automorphismus: bijektiv (ein-eindeutig) & homomorph (strukturtreu)
+  # f: A -> A ==> Automorphismus: bijektiv (ein-eindeutig) & endomorph (Definitionsmenge = Zielmenge)
   def square(list), do: IO.inspect Enum.map(list, fn(x) -> x * x end)
 end
 
-#Recursion.countdown(6)
-#Recursion.countdown(3.0)
-#Recursion.countdown("ten")
+Recursion.countdown(6)
+Recursion.countdown(3.0)
+Recursion.countdown("ten")
 
-#Recursion.print_factorial(6)
-#Recursion.print_factorial(3)
+Recursion.print_factorial(6)
+Recursion.print_factorial(3)
 
 #IO.puts "Sum of list is: " <> to_string(Recursion.sum([1,2,3,4], 0))
 
