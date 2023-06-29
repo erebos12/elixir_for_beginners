@@ -88,7 +88,7 @@ defmodule Recursion do
   def square([head | tail], result), do: square(tail, result ++ [head * head])
   # Map: The result is always a list of the same size as the original enumerable.
   # f: A -> A ==> Automorphismus: bijektiv (ein-eindeutig) & endomorph (Definitionsmenge = Zielmenge)
-  def square(list), do: IO.inspect Enum.map(list, fn(x) -> x * x end)
+  def square(list), do: Enum.map(list, fn(x) -> x * x end)
 
 
 end
