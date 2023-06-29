@@ -43,7 +43,6 @@ defmodule Recursion do
   def fib(1), do: 1
   def fib(n), do: fib(n-1) + fib(n-2)
 
-  ### sum of all elements in list
   @doc """
   Sum of all elements in list
 
@@ -72,7 +71,18 @@ defmodule Recursion do
   # f: A -> B, A = Menge von n Elementen als Liste -> B = Skalar
   def sum(list), do: Enum.reduce(list, 0, fn(x, result) -> x + result end)
 
-  ### square of each element in list
+
+  @doc """
+  Square of each element in list
+
+  ## Examples
+
+      iex> Recursion.square([1,2,3])
+      [1,4,9]
+
+      iex> Recursion.square([5,2,7])
+      [25,4,49]
+  """
   def square([], result), do: result
      # append to 'res' with ++
   def square([head | tail], result), do: square(tail, result ++ [head * head])
