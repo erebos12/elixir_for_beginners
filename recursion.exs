@@ -29,14 +29,13 @@ defmodule Recursion do
   def fib(0), do: 0
   def fib(1), do: 1
   def fib(n), do: fib(n-1) + fib(n-2)
-  # sum of integer in list
+
+  ### sum of all elements in list
   def sum([], acc)  do
     IO.puts("List is reduced!")
     IO.puts "sum([]," <> to_string(acc) <> ")"
     acc
   end
-
-  ### sum of al elements in list
   def sum([head | tail], acc) do
     IO.puts "head = " <> to_string(head)
     IO.inspect(tail)
