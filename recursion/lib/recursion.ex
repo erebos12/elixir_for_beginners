@@ -1,21 +1,4 @@
 defmodule Recursion do
-  @moduledoc """
-  Documentation for `Recursion`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Recursion.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
-
   # ATTENTION: The recursive call MUST be the last fucntion executed. Order matters here!
 
   ### countdown
@@ -36,11 +19,8 @@ defmodule Recursion do
   def countdown(str) when is_binary(str), do: IO.puts "Countdown is a string!"
 
   ### factorial..see also https://de.wikipedia.org/wiki/Fakult%C3%A4t_(Mathematik)
-   @moduledoc """
-  Documentation for Example.
-  """
 
-  @doc """
+@doc """
   Factorial
 
   ## Examples
@@ -64,6 +44,18 @@ defmodule Recursion do
   def fib(n), do: fib(n-1) + fib(n-2)
 
   ### sum of all elements in list
+  @doc """
+  Sum of all elements in list
+
+  ## Examples
+
+      iex> Recursion.sum([1,2,3])
+      6
+
+      iex> Recursion.sum([4,4,4])
+      12
+
+  """
   def sum([], acc)  do
     IO.puts("List is reduced!")
     IO.puts "sum([]," <> to_string(acc) <> ")"
@@ -78,7 +70,7 @@ defmodule Recursion do
   end
   # Reduce: It's generally used to combine elements into a single value.
   # f: A -> B, A = Menge von n Elementen als Liste -> B = Skalar
-  def sum(list), do: IO.puts Enum.reduce(list, 0, fn(x, result) -> x + result end)
+  def sum(list), do: Enum.reduce(list, 0, fn(x, result) -> x + result end)
 
   ### square of each element in list
   def square([], result), do: result

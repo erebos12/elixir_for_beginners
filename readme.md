@@ -45,10 +45,10 @@ Run "mix help" for more commands.
 ```
 Running the tests:
 ```
-🚀11:13:45:~/sandbox/basic_elixir/recursion (main)$ mix test
-Compiling 1 file (.ex)
+🚀11:29:23:~/sandbox/basic_elixir/recursion (main)$ mix test
 ....
 Finished in 0.01 seconds (0.00s async, 0.01s sync)
-3 doctests, 1 test, 0 failures
-Randomized with seed 206209
+4 doctests, 0 failures
+
+Randomized with seed 409192
 ```
