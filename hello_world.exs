@@ -13,3 +13,8 @@ IO.puts res
 res = is_list "hello"
 IO.puts res
 
+### Run me in command line with:
+# 🚀11:38:39:~/sandbox/basic_elixir (main)$ elixir hello_world.exs 
+
+
+
