@@ -4,7 +4,7 @@ defmodule Recursion do
   ### countdown
   def countdown(0.0), do: IO.puts "Blast off the float!"
   def countdown(0), do: IO.puts "Blast off the integer!"
-  def countdown(n) when n == 2 do
+  def countdown(n) when n == 2 and is_integer n do
     IO.puts "#{n}...n is equal to 2..."
     countdown(n-1)
   end
