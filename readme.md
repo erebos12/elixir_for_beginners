@@ -2,11 +2,9 @@
 
 Just read https://elixir-lang.org/getting-started/introduction.html
 
-## 1. Whats so special about Elixir ?
+## 1. What's so special about Elixir ?
 
 ### Runs on Erlang
-
-### Actor pattern with processes
 
 ### Immutability
 
@@ -16,6 +14,7 @@ Just read https://elixir-lang.org/getting-started/introduction.html
 
 ### Recursion
 
+### Actor pattern with processes
 
 
 ## 2. Mix framework
