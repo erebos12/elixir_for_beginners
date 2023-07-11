@@ -1,4 +1,21 @@
 defmodule PrimeFactorization do
+  @doc """
+  prime_factors
+
+  ## Examples
+
+      iex> PrimeFactorization.prime_factors(15)
+      [5, 3]
+
+      iex> PrimeFactorization.prime_factors(6)
+      [3, 2]
+
+      iex> PrimeFactorization.prime_factors(720)
+      [5, 3, 3, 2, 2, 2, 2]
+
+      iex> PrimeFactorization.prime_factors(1500)
+      [5, 5, 5, 3, 2, 2]
+  """
   def prime_factors(n) when n <= 1 do
     []
   end
@@ -22,4 +39,4 @@ defmodule PrimeFactorization do
   end
 end
 
-IO.inspect PrimeFactorization.prime_factors(1_500_000_000_000)
+IO.inspect PrimeFactorization.prime_factors(6)
